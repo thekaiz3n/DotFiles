@@ -6,6 +6,6 @@ Based in s4vitar configuration
 
 In construction, updates are coming.
 
-ADD https://github.com/zsh-users/zsh-syntax-highlighting.
-ADD https://github.com/zsh-users/zsh-autosuggestions.
-Configure .zhsrc to save the history, to work in suggestions.
+ADD https://github.com/zsh-users/zsh-syntax-highlighting\
+ADD https://github.com/zsh-users/zsh-autosuggestions\
+Configure .zhsrc to save the history, to work in suggestions.\
