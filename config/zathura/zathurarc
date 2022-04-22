@@ -1,0 +1,37 @@
+set sandbox none
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+set selection-clipboard clipboard
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map K zoom in
+map J zoom out
+map i recolor
+map p print
+
+set default-bg                     "#000000"
+set default-fg                     "#e3dbd0"
+set statusbar-bg                   "#0f1518"
+set statusbar-fg                   "#e3dbd0"
+set inputbar-bg                    "#0f1518"
+set inputbar-fg                    "#e3dbd0"
+set notification-bg                "#0f1518"
+set notification-fg                "#e3dbd0"
+set notification-error-bg          "#0f1518"
+set notification-error-fg          "#e3dbd0"
+set notification-warning-bg        "#0f1518"
+set notification-warning-fg        "#e3dbd0"
+set highlight-color                "#A38B70"
+set highlight-active-color         "#C7946B"
+set completion-bg                  "#A38b70"
+set completion-fg                  "#C7946B"
+set completion-highlight-bg        "#A38B70"
+set completion-highlight-fg        "#C7946B"
+set recolor-lightcolor             "#000000"
+set recolor-darkcolor              "#ffffff"
+
+set recolor   true

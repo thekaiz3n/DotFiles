@@ -1,0 +1,31 @@
+Adapt kde to productivity like tiling manager
+
+Virtual desktops:
+	In settings, search by virtual desktops. Add virtual desktops.
+
+Kwin scripts:
+	In kwin scripts, get new scripts, install krohnkite.
+	Run to abilite the configurations:
+		mkdir -p ~/.local/share/kservices5/
+		ln -s ~/.local/share/kwin/scripts/krohnkite/metadata.desktop ~/.local/share/kservices5/krohnkite.desktop
+	In configurations disable monocle layout and set the spaces between winodws.
+
+Shortcuts:
+	In shortcuts, kwin, change the shortcuts to windows + numbervirtualdesktop.
+	In menu toolbar, add menu global menu widget. To show options of the applications.
+	Add firefox, and shorcut window + w.
+	Add terminal, window + enter.
+	In kwin change the switch to window * to (normally the cycle to changes is active by default in this shortcuts):
+		window + j: up/prev
+		window + k: down/next
+	In kwin to rezise:
+		window + h: left
+		window + l: right
+		window + i: grow height
+		window + m: shrink height
+	In kwin close window: window + q.
+	Add dolphin: windows + s
+	Add krunner(execute applications): window + d
+
+Appearence customizations:
+	In workspace behavior, desktop effects, activate dim inactive.
