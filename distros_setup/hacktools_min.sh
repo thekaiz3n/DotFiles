@@ -65,8 +65,6 @@ echo "Install dalfox"
 go install github.com/hahwul/dalfox/v2@latest
 echo "Install puredns"
 go install github.com/d3mondev/puredns/v2@latest
-echo "Install GetJs"
-go install github.com/003random/getJS@latest
 echo "Install Meg"
 go install github.com/tomnomnom/meg@latest
 echo "Install Freq"
@@ -87,8 +85,6 @@ repos["LinkFinder"]="dark-warlord14/LinkFinder"
 repos["JSScanner"]="0x240x23elu/JSScanner"
 repos["GitTools"]="internetwache/GitTools"
 repos["SecretFinder"]="m4ll0k/SecretFinder"
-repos["M4ll0k"]="m4ll0k/BBTz"
-repos["DNSvalidator"]="vortexau/dnsvalidator"
 repos["Massdns"]="blechschmidt/massdns"
 
 dir="$HOME/Tools"
