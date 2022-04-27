@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 DEBUG_STD="&>/dev/null"
 DEBUG_ERROR="2>/dev/null"
