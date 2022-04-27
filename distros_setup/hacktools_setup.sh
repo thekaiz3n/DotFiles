@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 DEBUG_STD="&>/dev/null"
 DEBUG_ERROR="2>/dev/null"
@@ -6,7 +6,7 @@ DEBUG_ERROR="2>/dev/null"
 # TERM COLORS
 bblue='\033[1;34m'
 
-#printf "${bblue} Running: Installing Golang tools (${#gotools[@]})${reset}\n\n"
+printf "${bblue} Running: Installing Golang tools (${#gotools[@]})${reset}\n\n"
 
 go env -w GO111MODULE=auto
 
@@ -79,7 +79,7 @@ go install github.com/KathanP19/Gxss@latest
 echo "Install gospider"
 go install github.com/jaeles-project/gospider@latest
 echo "Install crobat"
-go get github.com/cgboal/sonarsearch/cmd/crobat
+go install github.com/cgboal/sonarsearch/crobat@latest
 echo "Install crlfuzz"
 go install github.com/dwisiswant0/crlfuzz/cmd/crlfuzz@latest
 echo "Install dalfox"
@@ -143,7 +143,7 @@ pip3 install uro
 
 eval wget -nc -O ~/.gf/potential.json https://raw.githubusercontent.com/devanshbatham/ParamSpider/master/gf_profiles/potential.json $DEBUG_STD
 
-#printf "${bblue}\n Running: Installing repositories (${#repos[@]})${reset}\n\n"
+printf "${bblue}\n Running: Installing repositories (${#repos[@]})${reset}\n\n"
 
 cd "$dir" || {
     echo "Failed to cd to $dir in ${FUNCNAME[0]} @ line ${LINENO}"
@@ -159,11 +159,9 @@ for repo in "${!repos[@]}"; do
     eval git pull $DEBUG_STD
     exit_status=$?
     if [ $exit_status -eq 0 ]; then
-        echo "Installed:"
-        #printf "${yellow} $repo installed (${repos_step}/${#repos[@]})${reset}\n"
+        printf "${yellow} $repo installed (${repos_step}/${#repos[@]})${reset}\n"
     else
-        echo "Try manually"
-        #printf "${red} Unable to install $repo, try manually (${repos_step}/${#repos[@]})${reset}\n"
+        printf "${red} Unable to install $repo, try manually (${repos_step}/${#repos[@]})${reset}\n"
     fi
     if [ -s "requirements.txt" ]; then
         eval $SUDO pip3 install -r requirements.txt $DEBUG_STD
