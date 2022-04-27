@@ -159,8 +159,10 @@ for repo in "${!repos[@]}"; do
     eval git pull $DEBUG_STD
     exit_status=$?
     if [ $exit_status -eq 0 ]; then
+        echo "Installed:"
         #printf "${yellow} $repo installed (${repos_step}/${#repos[@]})${reset}\n"
     else
+        echo "Try manually" 
         #printf "${red} Unable to install $repo, try manually (${repos_step}/${#repos[@]})${reset}\n"
     fi
     if [ -s "requirements.txt" ]; then
