@@ -79,7 +79,7 @@ go install github.com/KathanP19/Gxss@latest
 echo "Install gospider"
 go install github.com/jaeles-project/gospider@latest
 echo "Install crobat"
-go install github.com/cgboal/sonarsearch/crobat@latest
+go get github.com/cgboal/sonarsearch/cmd/crobat
 echo "Install crlfuzz"
 go install github.com/dwisiswant0/crlfuzz/cmd/crlfuzz@latest
 echo "Install dalfox"
