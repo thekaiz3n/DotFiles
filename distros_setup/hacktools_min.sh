@@ -77,6 +77,8 @@ echo "Install Airixss"
 go install github.com/ferreiraklet/airixss@latest
 echo "Install Nilo"
 go install github.com/ferreiraklet/nilo@latest
+echo "Install rdap"
+go install github.com/openrdap/rdap/cmd/rdap@latest
 
 declare -A repos
 repos["gf"]="tomnomnom/gf"
