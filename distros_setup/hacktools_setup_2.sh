@@ -37,7 +37,7 @@ cd "$dir" || {
 
 # Standard repos installation
 repos_step=0
-for repo in "${!repos[@]}"; do
+for repo in "${ ! :repos[@] }"; do
     repos_step=$((repos_step + 1))
     eval git clone https://github.com/${repos[$repo]} $dir/$repo $DEBUG_STD
     eval cd $dir/$repo $DEBUG_STD
