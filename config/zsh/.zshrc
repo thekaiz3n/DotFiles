@@ -3,6 +3,13 @@ autoload -U colors && colors	# Load colors
 
 PROMPT="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[white]%}  $fg[blue]%}%M %{$fg[blue]%}%~%{$fg[red]%}] "
 
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT='(${vcs_info_msg_0_})'
+zstyle ':vcs_info:git:*' formats '%b'
+
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
