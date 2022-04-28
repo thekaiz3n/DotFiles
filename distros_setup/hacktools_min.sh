@@ -79,6 +79,8 @@ echo "Install Nilo"
 go install github.com/ferreiraklet/nilo@latest
 echo "Install rdap"
 go install github.com/openrdap/rdap/cmd/rdap@latest
+echo "Install gobuster"
+go install github.com/OJ/gobuster/v3@latest
 
 declare -A repos
 repos["gf"]="tomnomnom/gf"
