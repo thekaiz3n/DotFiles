@@ -49,3 +49,9 @@ echo "Tools"
 echo "==============================================================================="
 sudo apt install -y docker.io docker-compose
 sudo apt install -y parallel
+
+echo "==============================================================================="
+echo "Development"
+echo "==============================================================================="
+sudo apt install -y python3-pip
+pip3 install numpy pandas

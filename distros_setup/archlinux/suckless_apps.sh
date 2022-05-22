@@ -5,7 +5,7 @@
 # Make the suckless softwares
 
 echo "Installing suckless softwares"
-cd suckless
+cd $DOTFILES//distros_setup/suckless
 
 # dmenu
 cd dmenu
@@ -30,8 +30,7 @@ sudomake install
 cd ..
 
 echo "Moving statubar configs to ~/.local/bin/statusbar"
-mkdir ~/.config
-cp -r statusbar/ ~/config
+cp -r $DOTFILES/distros_setup/suckless/statusbar/ ~/.local/bin/statusbar/
 
 echo "Installing yay"
 
@@ -41,5 +40,5 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-cd dotfiles/distros_setup/archlinux/config_files
+cd $DOTFILES/distros_setup/config_files/x11
 cp xprofile xresources ~/.config/x11/
