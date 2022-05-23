@@ -12,8 +12,5 @@ cp -r .timewizard/* ~/.timewizard
 echo "Installing exa"
 sudo pacman -Sy exa
 
-echo "Installing brave"
-yay -S brave-bin
-
 echo "zathura"
-cp $DOTFILES/config/zathura/zathurarc ~/.config/zathura/zathurarc
+cp ~/downloads/DotFiles/config/zathura/zathurarc ~/.config/zathura/zathurarc

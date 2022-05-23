@@ -5,40 +5,35 @@
 # Make the suckless softwares
 
 echo "Installing suckless softwares"
-cd $DOTFILES//distros_setup/suckless
+cd ~/downloads/DotFiles/distros_setup/distros_setup/archlinux/suckless
 
 # dmenu
-cd dmenu
 echo "Installing dmenu"
+cp -f ~/downloads/DotFiles/distros_setup/distros_setup/archlinux/suckless/dmenu/config.h ~/.local/src/dmenu/
+cd ~/.local/src/dmenu/
 sudo make install
 
 # dwm
 echo "Installing dwm"
-cd ../dwm
+cp -f ~/downloads/DotFiles/distros_setup/distros_setup/archlinux/suckless/dwm/config.h ~/.local/src/dwm/
+cd ~/.local/src/dwm/
 sudo make install
 
 # dwmblocks
 echo "Instaling dwmblocks"
-cd ../dwmblocks
+cp -f ~/downloads/DotFiles/distros_setup/distros_setup/archlinux/suckless/dwmblocks/config.h ~/.local/src/dwmblocks/
+cd ~/.local/src/dwmblocks/
 sudo make install
 
 # st terminal
 echo "Installing st terminal"
-cd ../st
-sudomake install
-
-cd ..
+cp -f ~/downloads/DotFiles/distros_setup/distros_setup/archlinux/suckless/st/config.h ~/.local/src/st/
+cd ~/.local/src/st/
+sudo make install
 
 echo "Moving statubar configs to ~/.local/bin/statusbar"
-cp -r $DOTFILES/distros_setup/suckless/statusbar/ ~/.local/bin/statusbar/
+cp -r ~/downloads/DotFiles/distros_setup/distros_setup/archlinux/suckless/statusbar/ ~/.local/bin/statusbar/
 
-echo "Installing yay"
-
-cd ~/downloads
-
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
-cd $DOTFILES/distros_setup/config_files/x11
+echo "Files x11"
+cd ~/downloads/DotFiles/distros_setup/config_files/x11
 cp xprofile xresources ~/.config/x11/
