@@ -35,5 +35,5 @@ echo "Moving statubar configs to ~/.local/bin/statusbar"
 cp -r ~/downloads/DotFiles/distros_setup/distros_setup/archlinux/suckless/statusbar/ ~/.local/bin/statusbar/
 
 echo "Files x11"
-cd ~/downloads/DotFiles/distros_setup/config_files/x11
+cd ~/downloads/DotFiles/distros_setup/archlinux/config_files/x11
 cp xprofile xresources ~/.config/x11/
