@@ -1,0 +1,29 @@
+!! Transparency (0-1):
+*.alpha: 0.95
+*.alphaOffset: 0.10
+
+!! Set a default font and font size as below:
+/**.font: Hack NF:size=11*/
+*.font: ComicMono:size=11
+
+/* !! colors : */
+*.background: #000
+*.foreground: #fff
+*.color0: #1d2021
+*.color1: #cc241d
+*.color2: #01ff02
+*.color3: #d79921
+*.color4: #fff
+*.color5: #00ffff
+*.color6: #3997ca
+*.color7: #a89984
+*.color8: #928374
+*.color9: #cd5c5c /*red*?
+*.color10: #ff8200
+*.color11: #fabd2f
+*.color12: #0080ff /*blue*/
+*.color13: #ff00ff
+*.color14: #fafa00
+*.color15: #ebdbb2
+*.color256: #1d2021
+*.color257: #ebdbb2
