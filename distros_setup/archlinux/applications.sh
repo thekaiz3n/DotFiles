@@ -10,7 +10,7 @@ mkdir ~/.timewizard
 cp -r .timewizard/* ~/.timewizard
 
 echo "Installing exa"
-sudo pacman -Sy exa
+sudo pacman -Sy exa bat
 
 echo "zathura"
 cp ~/downloads/DotFiles/config/zathura/zathurarc ~/.config/zathura/zathurarc

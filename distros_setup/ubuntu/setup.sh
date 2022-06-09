@@ -13,13 +13,13 @@ echo " "
 echo "==============================================================================="
 echo "Configuring zsh"
 mkdir /usr/share/zsh/plugins/
-sudo apt install -y unzip
+sudo apt install -y unzip bat exa
 
 # exa install
-EXA_VERSION=$(curl -s "https://api.github.com/repos/ogham/exa/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
-curl -Lo exa.zip "https://github.com/ogham/exa/releases/latest/download/exa-linux-x86_64-v${EXA_VERSION}.zip"
-sudo unzip -q exa.zip bin/exa -d /usr/local
-rm -rf exa.zip
+#EXA_VERSION=$(curl -s "https://api.github.com/repos/ogham/exa/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
+#curl -Lo exa.zip "https://github.com/ogham/exa/releases/latest/download/exa-linux-x86_64-v${EXA_VERSION}.zip"
+#sudo unzip -q exa.zip bin/exa -d /usr/local
+#rm -rf exa.zip
 
 # Plugins
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting /usr/share/zsh/plugins/fast-syntax-highlighting/

@@ -79,6 +79,9 @@ bindkey '^[[P' delete-char
 # Alias
 alias ls="exa"
 alias lsa="exa -la"
+alias lsat="exa -la --tree"
+
+alias cat="bat"
 
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
