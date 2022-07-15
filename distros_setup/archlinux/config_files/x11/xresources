@@ -1,6 +1,6 @@
 !! Transparency (0-1):
 *.alpha: 0.95
-*.alphaOffset: 0.10
+*.alphaOffset: 0.20
 
 !! Set a default font and font size as below:
 /**.font: Hack NF:size=11*/
@@ -11,10 +11,10 @@
 *.foreground: #fff
 *.color0: #1d2021
 *.color1: #cc241d
-*.color2: #01ff02
+*.color2: #0cd40d
 *.color3: #d79921
 *.color4: #fff
-*.color5: #00ffff
+*.color5: #1cb8b8
 *.color6: #3997ca
 *.color7: #a89984
 *.color8: #928374
@@ -22,7 +22,7 @@
 *.color10: #ff8200
 *.color11: #fabd2f
 *.color12: #0080ff /*blue*/
-*.color13: #ff00ff
+*.color13: #7e0b80
 *.color14: #fafa00
 *.color15: #ebdbb2
 *.color256: #1d2021
